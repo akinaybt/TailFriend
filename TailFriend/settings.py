@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 from decouple import config, Csv
 
@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
 
     'user.apps.UserConfig',
+    'vetclinic.apps.VetclinicConfig',
+    'shelter.apps.ShelterConfig',
+    'animals.apps.AnimalsConfig'
 ]
 
 MIDDLEWARE = [
@@ -123,6 +126,9 @@ STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
+AUTH_USER_MODEL = 'user.CustomUser'
+
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER_MODEL = 'user.CustomUser'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
