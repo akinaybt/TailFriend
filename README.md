@@ -20,3 +20,4 @@ TailFriend aims to reduce stress and save time during critical situations involv
 - Alexandr An (75274735) – Frontend Developer  
 - Akinay Bekmambetova (25955446) – Backend Developer, Database Management  
 - Mikhail Makarchuk (89587577) – Marketing & Research  
+![TailFriend logo](https://github.com/user-attachments/assets/45b5b33a-ba2f-4b48-9b38-360b3fe8731e)
