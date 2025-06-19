@@ -1,29 +1,41 @@
-body {
+/* Global Reset & Typography */
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* Body (Home Page) */
+body {
+  background-color: #f7fdfd;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header & Navigation */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: white;
+  background-color: #ffffff;
   border-bottom: 1px solid #eee;
 }
 
-.logo {
+header .logo {
   font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color: #333333;
 }
 
 nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #333;
+  color: #333333;
   font-weight: 500;
   border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
 }
 
 nav a:hover,
@@ -31,9 +43,10 @@ nav a.active {
   border-color: #81d8d0;
 }
 
+/* Hero Section */
 .hero {
   background: linear-gradient(to bottom right, #81d8d0, #a3e6e0);
-  color: white;
+  color: #ffffff;
   padding: 100px 20px;
   text-align: center;
 }
@@ -52,24 +65,25 @@ nav a.active {
   padding: 12px 30px;
   font-size: 16px;
   background-color: transparent;
-  color: white;
-  border: 2px solid white;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .hero button:hover {
-  background-color: white;
+  background-color: #ffffff;
   color: #81d8d0;
 }
 
+/* Gallery Section */
 .gallery {
   display: flex;
-  gap: 16px;
-  padding: 40px;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 40px 20px;
 }
 
 .gallery img {
@@ -77,4 +91,37 @@ nav a.active {
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Instructions Section */
+.instructions {
+  background-color: #ffffff;
+  padding: 60px 20px;
+}
+
+.instructions h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.instructions p {
+  text-align: center;
+  color: #555555;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.instructions ol {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 18px;
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.5;
 }

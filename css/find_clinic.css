@@ -1,0 +1,117 @@
+/* Find Clinic Page Styles */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7fdfd;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  border-color: #81d8d0;
+}
+
+.clinic-search {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.search-box h1 {
+  font-size: 32px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 60%;
+  max-width: 400px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  border: none;
+  background-color: #81d8d0;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #6ccbc3;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clinic-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.clinic-card h3 {
+  margin-top: 0;
+  color: #333333;
+}
+
+.clinic-card p {
+  margin: 8px 0;
+  color: #555555;
+  font-size: 14px;
+}
+
+.clinic-card button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #81d8d0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 14px;
+}
+
+.clinic-card button:hover {
+  background-color: #6ccbc3;
+}

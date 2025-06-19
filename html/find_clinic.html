@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailFriend - Find Clinic</title>
+  <link rel="stylesheet" href="../css/find_clinic.css">
+</head>
+<body>
+<header>
+  <div class="logo">TailFriend</div>
+  <nav>
+    <a href="homepage.html">Home</a>
+    <a href="#" class="active">Find clinic</a>
+    <a href="rescued_animals.html">Rescued animals</a>
+  </nav>
+  <nav>
+    <a href="login.html">Log in</a>
+    <a href="rescued_animals.html">Sign up</a>
+  </nav>
+</header>
+
+<main class="clinic-search">
+  <section class="search-box">
+    <h1>Locate Nearby Clinics & Shelters</h1>
+    <input type="text" id="location-input" placeholder="Enter your address or ZIP code">
+    <button id="search-btn">Search</button>
+  </section>
+
+  <section class="results" id="results">
+    <!-- Example clinic card -->
+    <div class="clinic-card">
+      <h3>Happy Paws Veterinary Clinic</h3>
+      <p>123 Pet Street, Cityname</p>
+      <p>Open: 24/7</p>
+      <button>Get Directions</button>
+    </div>
+    <!-- More cards will populate here -->
+  </section>
+</main>
+
+<script>
+  // Placeholder for search functionality
+  const btn = document.getElementById('search-btn');
+  btn.addEventListener('click', () => {
+    // Implement geolocation/search API here
+    alert('Search functionality coming soon!');
+  });
+</script>
+</body>
+</html>

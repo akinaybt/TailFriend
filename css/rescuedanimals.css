@@ -1,0 +1,101 @@
+/* Rescued Animals Page Styles */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7fdfd;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+}
+
+nav a:hover,
+nav a.active {
+  border-color: #81d8d0;
+}
+
+.rescue-gallery {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rescue-gallery h1 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.animal-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.animal-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.animal-card h3 {
+  margin: 16px 0 8px;
+  color: #333333;
+}
+
+.animal-card p {
+  margin: 0 16px 12px;
+  color: #555555;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.animal-card button {
+  margin: 16px;
+  padding: 12px;
+  background-color: #81d8d0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.animal-card button:hover {
+  background-color: #6ccbc3;
+}
