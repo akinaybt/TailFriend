@@ -42,3 +42,8 @@ class UserProfileSerializer(serializers.ModelSerializer):
         profile = UserProfile.objects.create(user=user,
                                              **validated_data)
         return profile
+
+class VetUserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = VetWorkerUser
+        fields = ['user']

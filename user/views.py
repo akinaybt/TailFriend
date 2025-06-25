@@ -13,4 +13,3 @@ class ProfileUpdateView(generics.RetrieveUpdateAPIView):
     queryset = UserProfile.objects.all()
     serializer_class = UserProfileSerializer
     permission_classes = [IsAuthenticated, IsProfileOrReadOnly]
-    lookup_field = 'pk'

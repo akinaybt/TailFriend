@@ -1,6 +1,7 @@
 from django.conf import settings
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from vetclinic.models import VeterinaryClinic
 
 class CustomUser(AbstractUser):
     is_vetworker = models.BooleanField(default=True)
@@ -32,8 +33,9 @@ class UserProfile(models.Model):
     def __str__(self):
         return f"Профиль пользователя {self.user}"
 
-class VetClinicUser(models.Model):
+class VetWorkerUser(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    clinic = models.ForeignKey('vetclinic.VeterinaryClinic', on_delete=models.CASCADE, related_name='workers')
 
     class Meta:
         verbose_name = 'Ветеринар'
@@ -41,5 +43,3 @@ class VetClinicUser(models.Model):
 
     def __str__(self):
         return f'{self.user}'
-
-

@@ -9,7 +9,7 @@ class CustomUser(admin.ModelAdmin):
 class UserProfile(admin.ModelAdmin):
     list_display = ['user']
 
-@admin.register(VetClinicUser)
+@admin.register(VetWorkerUser)
 class VetClinicUser(admin.ModelAdmin):
     list_display = ['user']
 

@@ -1,1 +1,9 @@
 .env
+user/__pycache__/admin.cpython-312.pyc
+user/__pycache__/models.cpython-312.pyc
+user/__pycache__/permissions.cpython-312.pyc
+user/__pycache__/serializers.cpython-312.pyc
+user/__pycache__/views.cpython-312.pyc
+animals/__pycache__/models.cpython-312.pyc
+animals/__pycache__/urls.cpython-312.pyc
+animals/__pycache__/views.cpython-312.pyc

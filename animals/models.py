@@ -13,7 +13,7 @@ class RescuedAnimal(models.Model):
     species = models.CharField(max_length=20, choices=SPECIES_CHOICES)
     custom_species = models.CharField(max_length=100, blank=True, null=True)  # пользователь вводит свой вариант
     breed = models.CharField(max_length=100, blank=True)
-    age = models.PositiveIntegerField()
+    age = models.PositiveIntegerField(verbose_name="Age (in months)")
     health_status = models.CharField(max_length=255)
     photo = models.ImageField(upload_to='rescued_animals/', blank=True)
     adopted = models.BooleanField(default=False)
